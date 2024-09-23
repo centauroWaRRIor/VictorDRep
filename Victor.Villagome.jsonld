@@ -1,0 +1,75 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "doNotList": false,
+    "givenName": "Victor.Villagomez",
+    "motivations": "What motivates me is a desire for decentralized systems that allow for greater individual autonomy, sound money and global prosperity. And I believe Cardano is pound for pound the best candidate for realizing this vision. \n\nOne of my main motivations for becoming a Drep is to force myself to be be more involved in its governance and to keep up with all so I can be an informed voter. It also motivates me for keep increasing my lovelace stack so that my vote power increases. \n\nAnother thing that motivates me is my intellectual opposition to Keynesians and the Fed cronies. So nothing motivates me more that a future were Cardano tech takes away power from them. \n\nFinally, another motivation of mine is wanting to see the competition finally showing us some respect by having the first blockchain to achieve the trifecta.",
+    "objectives": "Decentralization and Blockchain: I believe Cardano infrastructure will allow for new forms of social organization: permissionless, trustless, and censorship-resistant systems that can operate without central authorities.\n\nTranscending Traditional Politics: I want Cardano to power the decentralized systems that help move society beyond current political structures, allowing for more diverse and efficient forms of governance.\n\nGlobal Prosperity: I want Cardano to power the next gen decentralized systems that lead to increased economic opportunities and wealth creation on a global scale.\n\nTechnological Convergence:  I look forward to the convergence of artificial intelligence, blockchain and augmented reality technologies in the not so distant future. \n\n",
+    "paymentAddress": "addr1q9zyvxdncchumfdsd6a86dka0mvls5m5v06lhy2zvyufwknn8rj6pgsuj4xax8gjxr7dpqygmauhset0nj6rqqc80y3sp72gzm",
+    "qualifications": "I'm a Software Engineer working on deep tech. I pride myself in been a balanced human being who is able to learn new things and find nuance in subject matters. There are no right solutions, there are only tradeoffs. Show me the incentives and I'll show you the outcomes type of guy.",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Professional",
+        "uri": "https://www.linkedin.com/in/vvillagomez/"
+      },
+      {
+        "@type": "Identity",
+        "label": "Drep ID is in my X Bio",
+        "uri": "https://x.com/VEVillagomez"
+      }
+    ]
+  }
+}
