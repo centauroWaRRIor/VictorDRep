@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "comment": "I'm hereby voting to ratify the Cardano Constitution. A lot of work by the Cardano Community precedes this moment: CIP-1694, Chang Hard Fork, Plomin Hard Fork and all of the CRWG group efforts.\n\nIts my understanding that the Cardano Constitution offers: \n- Clarity and Stability: It provides clear guidelines for governance actions, reducing ambiguity and potential for misuse of authority.\n- Community Empowerment: It strengthens the role of ADA holders, DReps, and Stake Pool Operators in decision-making processes, promoting a truly decentralized governance model.\n- Adaptability: The constitution allows for amendments, ensuring that governance can evolve with the ecosystem's needs and feedback from the community.\n\nOur time is now to lead by example so voting yes for ratification."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
