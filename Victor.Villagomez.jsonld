@@ -1,5 +1,6 @@
 {
   "@context": {
+    "@language": "en-us",
     "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
     "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
     "hashAlgorithm": "CIP100:hashAlgorithm",
@@ -27,7 +28,14 @@
         },
         "paymentAddress": "CIP119:paymentAddress",
         "givenName": "CIP119:givenName",
-        "image": "CIP119:image",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
         "objectives": "CIP119:objectives",
         "motivations": "CIP119:motivations",
         "qualifications": "CIP119:qualifications",
@@ -53,8 +61,12 @@
   "authors": [],
   "hashAlgorithm": "blake2b-256",
   "body": {
-    "doNotList": false,
     "givenName": "Victor.Villagomez",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://raw.githubusercontent.com/centauroWaRRIor/VictorDRep/refs/heads/main/Image/xOqwAyY3_400x400.jpg",
+      "sha256": "8e6327638c898b0494a0a2e37fbf2d184f44e4d9e4efd6750120ef14c9eb4f22"
+    },
     "motivations": "What motivates me is a desire for decentralized systems that allow for greater individual autonomy, sound money and global prosperity. And I believe Cardano is pound for pound the best candidate for realizing this vision.\n\nOne of my main motivations for becoming a Drep is to force myself to be be more involved in its governance and to keep up with all so I can be an informed voter. It also motivates me for keep increasing my lovelace stack so that my vote power increases.\n\nAnother thing that motivates me is my intellectual opposition to Keynesians and the Fed cronies. So nothing motivates me more that a future were Cardano tech takes away power from them.\n\nFinally, another motivation of mine is wanting to see the competition finally showing us some respect by having the first blockchain to achieve the trifecta.",
     "objectives": "Decentralization and Blockchain: I believe Cardano infrastructure will allow for new forms of social organization: permissionless, trustless, and censorship-resistant systems that can operate without central authorities.\n\nTranscending Traditional Politics: I want Cardano to power the decentralized systems that help move society beyond current political structures, allowing for more diverse and efficient forms of governance.\n\nGlobal Prosperity: I want Cardano to power the next gen decentralized systems that lead to increased economic opportunities and wealth creation on a global scale.\n\nTechnological Convergence:  I look forward to the convergence of artificial intelligence, blockchain and augmented reality technologies in the not so distant future.",
     "paymentAddress": "addr1q965z29jldumuqvy43lr2ept04rmjw36ttjqv0692a0r0mhmdrmd0259pltkq5j8s3kqkqjmgx70l0ux836afhdnk9ksq2l44q",
@@ -62,12 +74,12 @@
     "references": [
       {
         "@type": "Link",
-        "label": "Professional",
+        "label": "Professional Experience",
         "uri": "https://www.linkedin.com/in/vvillagomez/"
       },
       {
         "@type": "Identity",
-        "label": "Drep ID is on my X Bio",
+        "label": "X Profile",
         "uri": "https://x.com/VEVillagomez"
       }
     ]
